@@ -10,5 +10,5 @@ df_jobs = pd.read_csv('Job_Curation.csv')
 cols = r3.replace(df_reporters, 'designation', df_jobs['original'], df_jobs['replacement'], df_remove['original'], redundancy = False)
 df_reporters['new_designation'] = cols[0]
 df_reporters['flags'] = cols[1]
-print(df_reporters)
 df_reporters.to_csv('TestNew.csv', index = False)
+print(df_reporters)
